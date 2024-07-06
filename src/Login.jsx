@@ -25,7 +25,7 @@ export const Login = () => {
                   <input type="text" style={{ borderRadius: '20px' }} className="form-control" id="password" placeholder="   Password" />
             </div>
             <div className="mb-3">
-                  <a href="#" className="text-decoration-none">Forgot Password?</a>
+                  <Link to="forgetpass" className="text-decoration-none fw-bold">Forgot Password?</Link>
             </div>
             <div className="mb-3">
                   <button className='btn btn-dark' style={{ width: '100%', borderRadius: '20px' }} >Login</button>
@@ -39,7 +39,7 @@ export const Login = () => {
                 </div>
                 
             </form>
-            <p className='card-text mt-5' >Not a member?<Link to="register" className="text-decoration-none"> Register now</Link></p>
+            <p className='card-text mt-5' >Not a member?<Link to="register" className="text-decoration-none fw-bold"> Register now</Link></p>
           </div>
         </div>
         <div className="col-md-4">

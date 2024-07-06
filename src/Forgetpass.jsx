@@ -5,30 +5,30 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle, faApple, faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
 
-export const Register = () => {
+export const Forgetpass = () => {
   return (
     <div className='container-fluid'>
     <div className="card mb-3 shadow" style={{ maxWidth: '100%' }}>
       <div className="row g-0">
         <div className="col-md-8">
           <div className="card-body">
-            <h1 className="card-title">Create Account</h1>
+            <h1 className="card-title">Forget Password!</h1>
             <p className="card-text">
              Simplify your workflow and boost your productivity
              With "Tuga's App." Get started for free.
             </p>
             <form>
             <div className="mb-3">
-                  <input type="text" style={{ borderRadius: '20px' }} className="form-control" id="name" placeholder="   Name" />
+                  <input type="text" style={{ borderRadius: '20px' }} className="form-control" id="name" placeholder="   User Name" />
             </div>
             <div className="mb-3">
                   <input type="text" style={{ borderRadius: '20px' }} className="form-control" id="email" placeholder="   Email I'd" />
             </div>
-            <div className="mb-3">
+            {/* <div className="mb-3">
                   <input type="text" style={{ borderRadius: '20px' }} className="form-control" id="password" placeholder="   Password" />
-            </div>
+            </div> */}
             <div className="mb-3">
-                  <button className='btn btn-dark' style={{ width: '100%', borderRadius: '20px' }} >Sign Up</button>
+                  <button className='btn btn-dark' style={{ width: '100%', borderRadius: '20px' }} >Reset Password</button>
             </div>
                 
                 <hr />or continue with
@@ -39,7 +39,7 @@ export const Register = () => {
                 </div>
                 
             </form>
-            <p className='card-text mt-5' >Aleady a member?<Link to="/" className="text-decoration-none fw-bold"> Login Page</Link></p>
+            <p className='card-text mt-5' >Go To<Link to="/" className="text-decoration-none fw-bold"> Login Page</Link> or <Link to="register" className="text-decoration-none fw-bold"> Register now</Link></p>
           </div>
         </div>
         <div className="col-md-4">

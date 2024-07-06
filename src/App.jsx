@@ -2,9 +2,10 @@ import React from 'react'
 import './App.css'
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import {Login} from './Login.jsx'
+import {Login} from './Login.jsx';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import { Register } from './Register.jsx';
+import {Forgetpass} from './Forgetpass.jsx';
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Login/>} ></Route>
         <Route path='register' element={<Register/>}></Route>
-        {/* <Route path='login' element={<Login/>}></Route> */}
+        <Route path='forgetpass' element={<Forgetpass/>}></Route>
+        <Route path='forgetpass/register' element={<Register/>}></Route>
       </Routes>
     </BrowserRouter>
   );
